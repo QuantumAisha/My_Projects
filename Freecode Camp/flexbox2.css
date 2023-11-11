@@ -1,0 +1,38 @@
+.gallery img{
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  *{
+    box-sizing: border-box;
+  }
+  body{
+    margin: 0;
+    font-family: pink;
+    background-color:purple;
+  }
+  .header{
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px;
+    background:rebeccapurple;
+    color:black;
+    border-bottom: 4px solid #fdb347;
+  }
+  .gallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 10px;
+    max-width: 1300px;
+    margin: 0 auto;
+    gap: 10px;
+  }
+  .gallery::after {
+    content: "";
+    width: 350px;
+  }

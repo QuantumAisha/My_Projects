@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="form.css">
+        <Title>Registration Form</Title>
+        <meta charset="utf-8">
+        <body>
+            <h1> Swahilipot Code Hack Registration Form</h1>
+            <p>Please fill out this form with the required information, for the Tech department ONLY</p>
+            <form action="https://register-demo.freecodecamp.org" method="post">
+                <fieldset> 
+                    <label for="first-name">Enter Your First Name <input required type="text" id="first-name" name="first name"></label>
+                    <label for="last-name" >Enter Your Last Name <input required type="text" id="last-name" name="last name"></label>
+                    <label for="email"> Enter Your Email <input required type="email" id="email" name="email"></label>
+                    <label for="phone-Number" >Enter Phone Number<input required  name="phone-Number" id="new-password" pattern="[0-9]{10}" ></label>
+                </fieldset>
+
+                
+                <fieldset>
+                    <P>Choose Your Gender</P>
+                    <label for="Male"><input class="inline" required id="Male" type="radio" name="gender-type" /> Male</label>
+                    <label for="Female"><input class="inline" id="Female" type="radio" name="gender-type" /> Female</label>
+                       
+                </fieldset>
+                <fieldset>
+                    <label for="National-ID">upload your National ID: <input type="file" id=" National-ID">
+                    <label for="CV">upload your CV: <input type="file" id="CV">   
+                    </label>
+                    <Label for="language">which is your preferred programming language? <input type="text" required id="language" name="language"></Label>
+                    <label for="importance">Why is this code hack position important to you?<input type="text" required  name="importance"></label>
+                    <label for="referrer">How did you hear about us? <select id="referrer" name="referrer">
+                        <option value="">(select one)</option>
+                        <option value="1">Swahilipot tech team</option>
+                        <option value="2">online</option>
+                        <option value="3">fellow students</option>
+                        <option value="4">other</option>
+                    </label>
+                        </select>
+                        <label for="bio">Provide a bio:
+                            <textarea id="bio" rows="3" cols="30" placeholder="I like coding on the beach..." name="bio"></textarea>
+                            </label>
+                </fieldset>
+                <input type="submit" value="Submit">
+            </form>
+            
+        </body>
+    </head>
+
+</html>
